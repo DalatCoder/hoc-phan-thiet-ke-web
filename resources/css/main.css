@@ -1,0 +1,17 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  color: #131313;
+}
+
+ol>li>a {
+  color: #131313;
+  text-decoration: none;
+}
+
+ol>li>a:hover {
+  color: #1e6add;
+  text-decoration: underline;
+}
