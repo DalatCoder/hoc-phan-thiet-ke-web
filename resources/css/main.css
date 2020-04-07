@@ -6,12 +6,16 @@ p {
   color: #131313;
 }
 
-ol>li>a {
+ul {
+  list-style: none;
+}
+
+ul>li>a:link, ul>li>a:visited {
   color: #131313;
   text-decoration: none;
 }
 
-ol>li>a:hover {
+ul>li>a:hover {
   color: #1e6add;
   text-decoration: underline;
 }
