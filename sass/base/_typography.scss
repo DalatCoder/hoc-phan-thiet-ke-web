@@ -9,3 +9,28 @@ body {
   font-weight: 400;
   color: #fff;
 }
+
+.heading-primary {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  & > * {
+    display: block;
+    color: #fff;
+  }
+
+  span:first-child {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  span:last-child {
+    font-weight: 600;
+    font-size: 5rem;
+    letter-spacing: 5px;
+
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+  }
+}
