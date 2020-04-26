@@ -1,0 +1,14 @@
+.heading-box {
+  grid-column: center-start / center-end;
+  margin: 7rem 0;
+}
+
+.all_exercises {
+  grid-column: center-start / center-end;
+  margin-bottom: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40rem);
+  grid-gap: 7rem;
+  justify-content: space-around;
+}

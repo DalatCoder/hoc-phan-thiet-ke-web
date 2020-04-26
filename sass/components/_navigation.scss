@@ -1,8 +1,17 @@
 .navigation {
   grid-column: full-start / full-end;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
   background-color: darken($color: $color-background-primary, $amount: 0.5%);
   border-bottom: darken($color: $color-background-primary, $amount: 2%);
+
+  opacity: 0.9;
+  width: 100vw;
+  height: 6rem;
 
   &__list {
     list-style: none;

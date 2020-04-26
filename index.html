@@ -16,15 +16,20 @@
 <body class="container">
   <nav class="navigation">
     <ul class="navigation__list">
-      <li class="navigation__item"><a href="#" class="navigation__link">Nguyen Trong Hieu</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">HTML</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">CSS</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">JS</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">Project</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">Contact me</a></li>
+      <li class="navigation__item"><a href="https://github.com/DalatCoder" class="navigation__link">Nguyen Trong
+          Hieu</a></li>
+      <li class="navigation__item"><a href="/" class="navigation__link">Home</a></li>
+      <li class="navigation__item"><a href="all_html.html" class="navigation__link">HTML</a></li>
+      <li class="navigation__item"><a href="all_css.html" class="navigation__link">CSS</a></li>
+      <li class="navigation__item"><a href="all_js.html" class="navigation__link">JS</a></li>
+      <li class="navigation__item"><a href="all_project.html" class="navigation__link">Project</a></li>
+      <li class="navigation__item"><a href="#footer" class="navigation__link">Contact me</a></li>
     </ul>
   </nav>
+
+  <!-- Navigation bar position set to fixed -->
+  <div class="navigation-placerholder" style="z-index: -1;">&nbsp;</div>
+
   <header class="header">
     <div class="bg-video">
       <video class="bg-video__content" muted autoplay loop>
@@ -76,9 +81,9 @@
         <div class="card__side card__side--back card__side--back-1">
           <div class="card__summary card__summary--1">
             <p>6 chapters</p>
-            <p>24 exercises</p>
+            <p>25 exercises</p>
           </div>
-          <a href="javascript:;" class="card__btn">Go</a>
+          <a href="all_html.html" class="card__btn">Go</a>
         </div>
       </div>
       <div class="card">
@@ -104,7 +109,7 @@
             <p>6 chapters</p>
             <p>24 exercises</p>
           </div>
-          <a href="javascript:;" class="card__btn">Go</a>
+          <a href="all_css.html" class="card__btn">Go</a>
         </div>
       </div>
       <div class="card">
@@ -130,7 +135,7 @@
             <p>6 chapters</p>
             <p>24 exercises</p>
           </div>
-          <a href="javascript:;" class="card__btn">Go</a>
+          <a href="all_js.html" class="card__btn">Go</a>
         </div>
       </div>
     </div>
@@ -140,7 +145,7 @@
     <h2 class="heading-secondary u-margin-bottom-md u-center-text">All Mini Projects</h2>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="contact">
       <p class="contact__text">Contact me at</p>
       <nav class="contact__nav">

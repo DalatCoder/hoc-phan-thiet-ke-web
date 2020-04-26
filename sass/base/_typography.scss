@@ -40,3 +40,31 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
 }
+
+.heading-tertiary {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  -webkit-background-clip: text;
+  display: block;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ff4e00;
+
+  & > * {
+    display: block;
+    color: transparent;
+  }
+
+  span:first-child {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  span:last-child {
+    font-size: 2.5rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
