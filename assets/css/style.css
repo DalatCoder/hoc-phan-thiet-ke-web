@@ -519,8 +519,10 @@ body {
   .exercise-details__link:active::before {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6); }
 
+.navigation-placerholder {
+  grid-column: full-start / full-end; }
+
 .navigation {
-  grid-column: full-start / full-end;
   position: fixed;
   top: 0;
   left: 0;
