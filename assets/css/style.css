@@ -381,6 +381,11 @@ body {
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 2px; }
+
 .header {
   grid-column: full-start / col-end 6;
   width: 100%;
