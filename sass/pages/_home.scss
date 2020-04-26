@@ -6,20 +6,22 @@
   grid-column: col-start 7 / full-end;
 }
 
-.section__exercises {
-  background-color: saddlebrown;
-
+.section-exercises {
   grid-column: center-start / center-end;
 
-  // TEST
-  height: 50rem;
+  padding: 10rem 0;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-gap: 10rem;
+    justify-content: space-evenly;
+  }
 }
 
-.section__project {
-  background-color: skyblue;
-
+.section-project {
   grid-column: center-start / center-end;
 
   // TEST
-  height: 50rem;
+  height: 30rem;
 }

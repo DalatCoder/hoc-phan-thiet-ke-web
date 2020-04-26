@@ -9,6 +9,7 @@
 @import "vendors/normalize";
 
 // 3. Base stuff
+@import "base/animation";
 @import "base/base";
 @import "base/fonts";
 @import "base/helpers";
@@ -22,6 +23,7 @@
 @import "components/bg-video";
 @import "components/navigation";
 @import "components/personal-info";
+@import "components/rotate-card";
 
 // 6. Page-specific styles
 @import "pages/home";
