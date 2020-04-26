@@ -372,7 +372,7 @@ body {
     text-align: center;
     display: block; }
     .navigation__item:not(:last-child) {
-      margin-right: 3rem; }
+      margin-right: 3.5rem; }
     .navigation__item:first-child {
       margin-right: auto; }
   .navigation__link:link, .navigation__link:visited {
@@ -382,15 +382,14 @@ body {
     color: white;
     outline: none;
     text-decoration: none;
-    padding: 3px 1rem;
-    border: 1px solid transparent;
-    border-radius: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
     transition: all 0.3s; }
   .navigation__link:hover, .navigation__link:active {
     background-image: linear-gradient(90deg, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     color: transparent;
-    border: 1px solid #ff8a00; }
+    border-bottom: 1px solid #ff8a00; }
 
 .personal-info {
   background-color: royalblue;
