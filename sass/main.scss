@@ -19,8 +19,9 @@
 @import "layout/footer";
 
 // 5. Components
-@import "components/bg-video.scss";
+@import "components/bg-video";
 @import "components/navigation";
+@import "components/personal-info";
 
 // 6. Page-specific styles
 @import "pages/home";
