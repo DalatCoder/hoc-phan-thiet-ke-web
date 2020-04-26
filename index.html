@@ -5,108 +5,53 @@
   <meta charset="UTF-8" />
   <title>Learn Web Design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="resources/css/main.css" type="text/css" media="screen" title="no title"
-    charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Production CSS -->
+  <!-- <link rel="stylesheet" href="dist/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8" /> -->
+
+  <!-- Dev CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="container">
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="#" class="navigation__link">Nguyen Trong Hieu</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">HTML</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">CSS</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">JS</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">Project</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">Contact me</a></li>
+    </ul>
+  </nav>
   <header class="header">
     <div class="bg-video">
-      <video class="bg-video__content" muted autoplay loop>
+      Video
+      <!-- <video class="bg-video__content" muted autoplay loop>
         <source src="resources/css/Puppiness.mp4" type="video/mp4">
         Trình duyệt không hỗ trợ phát video!
-      </video>
+      </video> -->
     </div>
-    <div class="dark-overlay">&nbsp;</div>
-    <div class="header__info-box">
-      <h1>Tổng hợp các bài tập môn Thiết kế web</h1>
-      <div class="header__personal-info-box">
-        <p>Nguyễn Trọng Hiếu</p>
-        <p>1812756</p>
-        <p>CTK42</p>
-      </div>
-    </div>
+    <h1 class="heading--primary">Tổng hợp các bài tập môn Thiết kế web</h1>
   </header>
+  <div class="personal-info">
+    <p>Nguyễn Trọng Hiếu</p>
+    <p>1812756</p>
+    <p>CTK42</p>
+  </div>
 
-  <h2>Bài tập về HTML</h2>
+  <section class="section section__exercises">
+    Exercise
+  </section>
 
-  <h3>Chương 4</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.4-1/index.html"> Exercise 4-1 </a> </li>
-    <li> <a href="labs/HTML/exercise.4-2/index.html"> Exercise 4-2 </a> </li>
-    <li> <a href="labs/HTML/exercise.4-3/index.html"> Exercise 4-3 </a> </li>
-    <li> <a href="labs/HTML/exercise.4-4/index.html"> Exercise 4-4 </a> </li>
-  </ul>
+  <section class="section section__project">
+    Mini Project
+  </section>
 
-  <h3>Chương 5</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.5-1/index.html"> Exercise 5-1 </a> </li>
-    <li> <a href="labs/HTML/exercise.5-2/index.html"> Exercise 5-2 </a> </li>
-    <li> <a href="labs/HTML/exercise.5-3/index.html"> Exercise 5-3 </a> </li>
-  </ul>
-
-  <h3>Chương 6</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.6-1/index.html"> Exercise 6-1 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-2/index.html"> Exercise 6-2 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-3/index.html"> Exercise 6-3 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-4/index.html"> Exercise 6-4 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-5/index.html"> Exercise 6-5 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-6/index.html"> Exercise 6-6 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-7/index.html"> Exercise 6-7 </a> </li>
-    <li> <a href="labs/HTML/exercise.6-8/index.html"> Exercise 6-8 </a> </li>
-  </ul>
-
-  <h3>Chương 7</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.7-1/index.html"> Exercise 7-1 </a> </li>
-  </ul>
-
-  <h3>Chương 8</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.8-1/index.html"> Exercise 8-1 </a> </li>
-    <li> <a href="labs/HTML/exercise.8-2/index.html"> Exercise 8-2 </a> </li>
-    <li> <a href="labs/HTML/exercise.8-3/index.html"> Exercise 8-3 </a> </li>
-    <li> <a href="labs/HTML/exercise.8-4/index.html"> Exercise 8-4 </a> </li>
-  </ul>
-
-  <h3>Chương 9</h3>
-  <ul>
-    <li> <a href="labs/HTML/exercise.9-1/index.html"> Exercise 9-1 </a> </li>
-    <li> <a href="labs/HTML/exercise.9-2/index.html"> Exercise 9-2 </a> </li>
-    <li> <a href="labs/HTML/exercise.9-3/index.html"> Exercise 9-3 </a> </li>
-    <li> <a href="labs/HTML/exercise.9-4/index.html"> Exercise 9-4 </a> </li>
-  </ul>
-
-  <h2>Bài tập về CSS</h2>
-  <h3>Chương 11</h3>
-  <ul>
-    <li> <a href="labs/CSS/chapter_11/exercise.11-1/index.html"> Exercise 11-1 </a> </li>
-    <li> <a href="labs/CSS/chapter_11/exercise.11-2/index.html"> Exercise 11-2 </a> </li>
-  </ul>
-
-  <h3>Chương 12</h3>
-  <ul>
-    <li><a href="labs/CSS/chapter_12/exercise.12-1/index.html"> Exercise 12-1 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-2/index.html"> Exercise 12-2 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-3/index.html"> Exercise 12-3 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-4/index.html"> Exercise 12-4 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-5/index.html"> Exercise 12-5 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-6/index.html"> Exercise 12-6 </a></li>
-    <li><a href="labs/CSS/chapter_12/exercise.12-7/index.html"> Exercise 12-7 </a></li>
-  </ul>
-
-  <h3>Chương 13</h3>
-  <ul>
-    <li><a href="labs/CSS/chapter_13/exercise.13-1/index.html"> Exercise 13-1 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-2/index.html"> Exercise 13-2 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-3/index.html"> Exercise 13-3 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-4/index.html"> Exercise 13-4 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-5/index.html"> Exercise 13-5 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-6/index.html"> Exercise 13-6 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-7/index.html"> Exercise 13-7 </a></li>
-    <li><a href="labs/CSS/chapter_13/exercise.13-8/index.html"> Exercise 13-8 </a></li>
-  </ul>
+  <footer class="footer">
+    Footer
+  </footer>
 </body>
 
 </html>

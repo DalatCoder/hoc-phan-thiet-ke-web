@@ -1,0 +1,33 @@
+{
+  "name": "dalatcoder.github.io",
+  "version": "1.0.0",
+  "description": "Tổng hợp các bài lab môn thiết kế web",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss assets/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/style.comp.css -o assets/css/style.prefix.css",
+    "compress:css": "node-sass assets/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalatCoder/dalatcoder.github.io.git"
+  },
+  "keywords": [],
+  "author": "Nguyen Trong Hieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DalatCoder/dalatcoder.github.io/issues"
+  },
+  "homepage": "https://github.com/DalatCoder/dalatcoder.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^7.1.0"
+  }
+}
