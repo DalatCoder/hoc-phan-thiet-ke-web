@@ -411,11 +411,20 @@ body {
   text-transform: uppercase;
   margin-bottom: 2rem;
   text-align: center;
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-  -webkit-background-clip: text;
   display: block;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #ff4e00; }
+  padding-bottom: 3rem; }
+  .heading-tertiary--html {
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #ff4e00; }
+  .heading-tertiary--css {
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #045de9; }
+  .heading-tertiary--js {
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #fbb034; }
   .heading-tertiary > * {
     display: block;
     color: transparent; }
@@ -518,10 +527,19 @@ body {
     position: relative;
     transition: all 0.2s; }
   .exercise-details__link:hover {
+    transform: translatey(-3px) scale(1.005); }
+  .exercise-details__link--html:hover {
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
     -webkit-background-clip: text;
-    color: transparent;
-    transform: translatey(-3px) scale(1.005); }
+    color: transparent; }
+  .exercise-details__link--css:hover {
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .exercise-details__link--js:hover {
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    -webkit-background-clip: text;
+    color: transparent; }
   .exercise-details__link:hover::before {
     content: "";
     display: inline-block;

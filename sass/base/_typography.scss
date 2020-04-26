@@ -60,11 +60,27 @@ body {
   text-transform: uppercase;
   margin-bottom: 2rem;
   text-align: center;
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-  -webkit-background-clip: text;
+
   display: block;
   padding-bottom: 3rem;
-  border-bottom: 1px solid #ff4e00;
+
+  &--html {
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #ff4e00;
+  }
+
+  &--css {
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #045de9;
+  }
+
+  &--js {
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #fbb034;
+  }
 
   & > * {
     display: block;
