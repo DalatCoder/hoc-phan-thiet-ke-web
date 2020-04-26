@@ -635,7 +635,7 @@ body {
         color: 25px;
         padding: 12px; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid yellow; }
+          border-bottom: 1px solid #14121d; }
 
 .personal-info {
   grid-column: col-start 7 / full-end; }
