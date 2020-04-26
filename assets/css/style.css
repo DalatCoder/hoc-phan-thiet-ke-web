@@ -329,7 +329,10 @@ body {
 .container {
   display: grid;
   grid-template-rows: 6rem calc(100vh - 6rem);
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(14rem, min-content) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; }
+
+::selection {
+  background-color: #eee; }
 
 /**
  * Clear inner floats
@@ -338,6 +341,18 @@ body {
   clear: both;
   content: "";
   display: table; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 8rem; }
 
 /**
  * Basic typography style for copy text
@@ -379,9 +394,42 @@ body {
     text-align: center; }
 
 .footer {
-  background-color: tomato;
   grid-column: full-start / full-end;
-  height: 20rem; }
+  background-color: #100e17;
+  border-top: 1px solid #1b1827;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contact {
+  text-align: center; }
+  .contact__text {
+    text-transform: uppercase; }
+  .contact__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0; }
+    .contact__nav ul li {
+      text-align: center; }
+      .contact__nav ul li a:link, .contact__nav ul li a:visited {
+        color: #eee;
+        text-decoration: none;
+        padding: 3px 1rem;
+        transition: all 0.3s;
+        display: block; }
+      .contact__nav ul li a:hover, .contact__nav ul li a:active {
+        background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        color: transparent;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        transform: rotate(3deg) scale(1.3); }
+
+.copyright {
+  color: #eee;
+  padding: 2rem 0;
+  border-top: 1px solid #333; }
 
 .bg-video {
   width: 100%;
@@ -464,15 +512,138 @@ body {
           -webkit-background-clip: text;
           color: transparent; }
 
+.card {
+  perspective: 1500px;
+  height: 53rem;
+  width: 100%;
+  position: relative; }
+  .card:hover .card__side--front {
+    transform: rotatey(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotatey(0); }
+  .card__side {
+    background-color: transparent;
+    width: 100%;
+    height: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: all 1s ease; }
+    .card__side--front {
+      background-color: #100e17;
+      color: #999; }
+    .card__side--back {
+      font-family: sans-serif;
+      font-size: 30px;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      transform: rotatey(180deg);
+      background-color: #100e17; }
+  .card__heading {
+    font-family: sans-serif;
+    text-align: center;
+    height: 200px;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card__heading--1 {
+      background-color: #ff4e00;
+      background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%); }
+    .card__heading--2 {
+      background-color: #045de9;
+      background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); }
+    .card__heading--3 {
+      background-color: #fbb034;
+      background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); }
+    .card__heading span {
+      display: block; }
+      .card__heading span:not(:last-of-type) {
+        margin-bottom: 10px; }
+    .card__heading span:first-child {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 300; }
+    .card__heading span:nth-child(2) {
+      font-size: 40px;
+      letter-spacing: 3px;
+      font-weight: 400; }
+    .card__heading span:last-child {
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      font-weight: 300; }
+  .card__summary {
+    -webkit-background-clip: text;
+    color: transparent; }
+    .card__summary--1 {
+      background-color: #ff4e00;
+      background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%); }
+    .card__summary--2 {
+      background-color: #045de9;
+      background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); }
+    .card__summary--3 {
+      background-color: #fbb034;
+      background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); }
+  .card__btn {
+    display: block;
+    padding: 5px 55px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #eee;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; }
+    .card__btn:hover {
+      transform: translatey(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+    .card__btn:active {
+      transform: translatey(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }
+  .card__details {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .card__details ul {
+      list-style: none;
+      display: block;
+      width: 90%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        display: block;
+        font-family: sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        color: 25px;
+        padding: 12px; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid yellow; }
+
 .personal-info {
   grid-column: col-start 7 / full-end; }
 
-.section__exercises {
-  background-color: saddlebrown;
+.section-exercises {
   grid-column: center-start / center-end;
-  height: 50rem; }
+  padding: 10rem 0; }
+  .section-exercises__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-gap: 10rem;
+    justify-content: space-evenly; }
 
-.section__project {
-  background-color: skyblue;
+.section-project {
   grid-column: center-start / center-end;
-  height: 50rem; }
+  height: 30rem; }
