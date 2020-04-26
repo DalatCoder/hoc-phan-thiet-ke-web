@@ -1,7 +1,7 @@
 .navigation {
   grid-column: full-start / full-end;
 
-  background-color: darken($color: $color-background-primary, $amount: 1%);
+  background-color: darken($color: $color-background-primary, $amount: 0.5%);
   border-bottom: darken($color: $color-background-primary, $amount: 2%);
 
   &__list {
