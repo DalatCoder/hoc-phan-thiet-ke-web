@@ -6,20 +6,29 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 
   & > *:not(:last-child) {
-    width: 80%;
+    width: 70%;
+
     text-align: center;
     padding: 1.5rem 0;
     border-bottom: 1px solid #ff8a00;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 40%;
+    }
   }
 
   &__nav {
     width: 50%;
     margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 40%;
+    }
 
     ul {
       list-style: none;

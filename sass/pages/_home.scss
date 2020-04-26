@@ -4,6 +4,11 @@
 
 .personal-info {
   grid-column: col-start 7 / full-end;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: full-start / full-end;
+    margin-top: 5rem;
+  }
 }
 
 .section-exercises {

@@ -309,6 +309,15 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 33%; } }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -367,6 +376,9 @@ body {
 .heading-primary {
   text-transform: uppercase;
   letter-spacing: 2px; }
+  @media only screen and (max-width: 43.75em) {
+    .heading-primary {
+      letter-spacing: 1.5px; } }
   .heading-primary > * {
     display: block;
     color: #fff; }
@@ -374,12 +386,21 @@ body {
     font-weight: 300;
     font-size: 3rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 43.75em) {
+      .heading-primary span:first-child {
+        font-size: 2rem; } }
   .heading-primary span:last-child {
     font-weight: 600;
     font-size: 5rem;
     letter-spacing: 5px;
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff; }
+    @media only screen and (max-width: 43.75em) {
+      .heading-primary span:last-child {
+        font-size: 3.5rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid #fff; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -403,8 +424,7 @@ body {
     letter-spacing: 3px;
     margin-bottom: 1rem; }
   .heading-tertiary span:last-child {
-    font-size: 2.5rem;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600; }
 
 .header {
@@ -418,6 +438,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      grid-column: full-start / full-end; } }
 
 .footer {
   grid-column: full-start / full-end;
@@ -538,13 +561,23 @@ body {
     padding: 0 5rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__list {
+        justify-content: space-around; } }
   .navigation__item {
     text-align: center;
     display: block; }
     .navigation__item:not(:last-child) {
       margin-right: 3.5rem; }
+      @media only screen and (max-width: 43.75em) {
+        .navigation__item:not(:last-child) {
+          margin-right: 0; } }
     .navigation__item:first-child {
       margin-right: auto; }
+      @media only screen and (max-width: 43.75em) {
+        .navigation__item:first-child {
+          display: none;
+          margin-right: 0; } }
   .navigation__link:link, .navigation__link:visited {
     color: #fff;
     font-weight: 400;
@@ -567,17 +600,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 2px; }
+  letter-spacing: 1.5px; }
   .personal-info > *:not(:last-child) {
-    width: 80%;
+    width: 70%;
     text-align: center;
     padding: 1.5rem 0;
     border-bottom: 1px solid #ff8a00; }
+    @media only screen and (max-width: 56.25em) {
+      .personal-info > *:not(:last-child) {
+        width: 40%; } }
   .personal-info__nav {
     width: 50%;
     margin-top: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .personal-info__nav {
+        width: 40%; } }
     .personal-info__nav ul {
       list-style: none;
       display: flex;
@@ -625,7 +664,7 @@ body {
       color: #999; }
     .card__side--back {
       font-family: sans-serif;
-      font-size: 30px;
+      font-size: 3rem;
       color: #eee;
       display: flex;
       flex-direction: column;
@@ -637,7 +676,7 @@ body {
   .card__heading {
     font-family: sans-serif;
     text-align: center;
-    height: 200px;
+    height: 20rem;
     -webkit-background-clip: text;
     color: transparent;
     display: flex;
@@ -655,17 +694,17 @@ body {
     .card__heading span {
       display: block; }
       .card__heading span:not(:last-of-type) {
-        margin-bottom: 10px; }
+        margin-bottom: 1rem; }
     .card__heading span:first-child {
-      font-size: 20px;
+      font-size: 2rem;
       letter-spacing: 2px;
       font-weight: 300; }
     .card__heading span:nth-child(2) {
-      font-size: 40px;
+      font-size: 4rem;
       letter-spacing: 3px;
       font-weight: 400; }
     .card__heading span:last-child {
-      font-size: 20px;
+      font-size: 2rem;
       letter-spacing: 1.5px;
       font-weight: 300; }
   .card__summary {
@@ -682,23 +721,23 @@ body {
       background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); }
   .card__btn {
     display: block;
-    padding: 5px 55px;
+    padding: 0.5rem 5.5rem;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 500;
     color: #eee;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.01);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease; }
     .card__btn:hover {
       transform: translatey(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
     .card__btn:active {
       transform: translatey(-1px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
   .card__details {
-    padding: 0 30px;
+    padding: 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
@@ -711,16 +750,19 @@ body {
         text-align: center;
         display: block;
         font-family: sans-serif;
-        font-size: 15px;
+        font-size: 1.5rem;
         letter-spacing: 2px;
         text-transform: capitalize;
-        color: 25px;
-        padding: 12px; }
+        padding: 1.2rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #14121d; }
 
 .personal-info {
   grid-column: col-start 7 / full-end; }
+  @media only screen and (max-width: 56.25em) {
+    .personal-info {
+      grid-column: full-start / full-end;
+      margin-top: 5rem; } }
 
 .section-exercises {
   grid-column: center-start / center-end;

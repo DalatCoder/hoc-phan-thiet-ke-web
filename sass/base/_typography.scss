@@ -14,6 +14,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 
+  @media only screen and (max-width: $bp-medium) {
+    letter-spacing: 1.5px;
+  }
+
   & > * {
     display: block;
     color: #fff;
@@ -23,6 +27,10 @@ body {
     font-weight: 300;
     font-size: 3rem;
     margin-bottom: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
   }
 
   span:last-child {
@@ -32,6 +40,13 @@ body {
 
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 3.5rem;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid #fff;
+    }
   }
 }
 
@@ -63,8 +78,7 @@ body {
   }
 
   span:last-child {
-    font-size: 2.5rem;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
   }
 }
