@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header {
+  background-color: yellowgreen;
+
+  grid-column: full-start / col-end 6;
+}

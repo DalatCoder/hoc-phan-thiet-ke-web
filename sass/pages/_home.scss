@@ -1,3 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.personal-info {
+  background-color: royalblue;
+
+  grid-column: col-start 7 / full-end;
+}
+
+.section__exercises {
+  background-color: saddlebrown;
+
+  grid-column: center-start / center-end;
+
+  // TEST
+  height: 50rem;
+}
+
+.section__project {
+  background-color: skyblue;
+
+  grid-column: center-start / center-end;
+
+  // TEST
+  height: 50rem;
+}
