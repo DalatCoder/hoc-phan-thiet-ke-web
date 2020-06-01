@@ -11,6 +11,18 @@
   }
 }
 
+.section-intro-web {
+  grid-column: center-start / center-end;
+  padding: 10rem 0 0 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    grid-gap: 3rem;
+    justify-content: space-around;
+  }
+}
+
 .section-exercises {
   grid-column: center-start / center-end;
 
