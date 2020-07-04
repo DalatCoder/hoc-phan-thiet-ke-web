@@ -27,7 +27,7 @@ styling background color, pseudo-class, pseudo-element, box model,
 floating, positioning, flex, grid, layout, reset CSS, CSS sprite, *SASS,
 LESS, UI/UX, bootstrap*.
 
-~JavaScript~
+JavaScript
 
 Variable, data types, array, logic, loop, function, object, event, DOM,
 callback function,
