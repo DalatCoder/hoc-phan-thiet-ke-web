@@ -8,11 +8,11 @@ trình duyệt
 -- Các nội dung nâng cao (các phần chữ màu đỏ), chỉ cần biết ở mức tổng
 quan
 
-Domain, hosting
+## Domain, hosting
 
 DNS, DNS server, domain name, hosting, XAMPP, *WAMP*, Apache, *IIS*
 
-HTML
+## HTML
 
 webkit engine browser, gecko engine browser, www, web, webpage, website,
 static website, dynamic website, web app, browser, text editor, code
@@ -20,14 +20,14 @@ editor, IDE, HTML, HTTP, HTML tag, empty tag, HTML element, attribute,
 doctype, markup validation, inline element, block element, URL, absolute
 path, relative path, web client, web server, render, DOM
 
-CSS
+## CSS
 
 Cascading, rule, selector, declaration, styling text, styling color,
 styling background color, pseudo-class, pseudo-element, box model,
 floating, positioning, flex, grid, layout, reset CSS, CSS sprite, *SASS,
 LESS, UI/UX, bootstrap*.
 
-JavaScript
+## JavaScript
 
 Variable, data types, array, logic, loop, function, object, event, DOM,
 callback function,
