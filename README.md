@@ -1,2 +1,2 @@
-# dalatcoder.github.io
-Tổng hợp các bài lab môn thiết kế web
+# Tổng hợp các bài lab môn thiết kế web - giảng viên phụ trách: thầy Lê Gia Công
+
