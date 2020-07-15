@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quản lý tài chính</title>
+  </head>
+  <body>
+    <h2>Quản lý tài chính</h2>
+
+    <div class="container">
+      <h4>Ngân sách khả dụng</h4>
+      <h1 id="balance"></h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Thu nhập</h4>
+          <p id="money-plus" class="money plus"></p>
+        </div>
+        <div>
+          <h4>Chi tiêu</h4>
+          <p id="money-minus" class="money minus"></p>
+        </div>
+      </div>
+
+      <h3>Lịch sử giao dịch</h3>
+      <ul id="list" class="list"></ul>
+
+      <h3>Thêm 1 giao dịch mới</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Mô tả</label>
+          <input
+            type="text"
+            id="text"
+            autocomplete="off"
+            placeholder="Nhập mô tả..."
+          />
+          <small id="error-text" class="error"></small>
+        </div>
+        <div class="form-control">
+          <label for="amount">Lượng tiền</label>
+          <input
+            type="number"
+            id="amount"
+            autocomplete="off"
+            placeholder="Số lượng"
+          />
+          <small id="error-amount" class="error"></small>
+        </div>
+        <button type="submit" class="btn">Thêm giao dịch</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
