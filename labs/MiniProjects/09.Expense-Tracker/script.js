@@ -93,9 +93,9 @@ function updateValues() {
     .filter((num) => num < 0)
     .reduce((total, cur) => (total += cur), 0);
 
-  dom.balance.innerText = 'đ' + formatMoney(balance) + ' x 1000';
-  dom.money_plus.innerText = '+đ' + formatMoney(totalIncome);
-  dom.money_minus.innerText = '-đ' + formatMoney(Math.abs(totalExpense));
+  dom.balance.innerText = formatMoney(balance);
+  dom.money_plus.innerText = formatMoney(totalIncome);
+  dom.money_minus.innerText = formatMoney(Math.abs(totalExpense));
 }
 
 // Remove transaction by ID
@@ -108,8 +108,13 @@ function removeTransaction(id) {
 }
 
 // Format number as money
+const formatter = new Intl.NumberFormat('vi-VN', {
+  style: 'currency',
+  currency: 'VND',
+});
+
 function formatMoney(money) {
-  return money.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'); // 12,345.67
+  return formatter.format(money);
 }
 
 // Update local storage transactions

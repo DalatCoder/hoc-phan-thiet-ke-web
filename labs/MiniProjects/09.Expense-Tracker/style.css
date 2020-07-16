@@ -73,6 +73,11 @@ h4 {
   color: #c0392b;
 }
 
+.form-control {
+  padding: 5px 0 25px;
+  position: relative;
+}
+
 label {
   display: inline-block;
   margin: 10px 0;
@@ -95,8 +100,11 @@ input[type='number']:focus {
 
 .error {
   color: #c0392b;
-  margin: 5px 0;
   display: none;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .error.show {
